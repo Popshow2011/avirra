@@ -45,15 +45,23 @@ class SlideStories {
     const meta = document.querySelectorAll('.meta')
     meta.forEach(item => item.remove())
 
-      document.head.innerHTML += `
-        <meta class="meta" property="og:image" content="${images[index].image}" />
-        <meta class="meta" property="og:image" content="${images[index].image}" />
-        <meta class="meta" property="og:image" itemprop="image" content="image/png" />
-        <meta class="meta" property="og:type" content="article" />
-        <meta class="meta" property="og:image:width" content="400" />
-        <meta class="meta" property="og:image:height" content="300" />
-        <meta class="meta" property="og:image" content="A shiny red apple with a bite taken out" />
-      `
+          document.head.innerHTML += `
+          <meta class="meta" name="description" content="${images[index].description}" />
+          <meta class="meta" property="og:title" content="${images[index].description}" />
+          <meta class="meta" property="og:url" content="${images[index].url}" />
+          <meta class="meta" property="og:description" content="${images[index].description}" />
+          <meta class="meta" property="og:image" content="${images[index].image}" />
+          `
+
+      // document.head.innerHTML += `
+      //   <meta class="meta" property="og:image" content="${images[index].image}" />
+      //   <meta class="meta" property="og:image" content="${images[index].image}" />
+      //   <meta class="meta" property="og:image" itemprop="image" content="image/png" />
+      //   <meta class="meta" property="og:type" content="article" />
+      //   <meta class="meta" property="og:image:width" content="400" />
+      //   <meta class="meta" property="og:image:height" content="300" />
+      //   <meta class="meta" property="og:image" content="A shiny red apple with a bite taken out" />
+      // `
       
       this.autoSlide();      
     }
