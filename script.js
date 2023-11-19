@@ -3,25 +3,24 @@ const images = [
     url: "https://avirra.ru/catalog/product/gx_460/?offer=3472",
     description: "lexus gx 460 Premium Sport",
     image:
-      "https://avirra.ru/upload/iblock/b8d/b8d4ec19ef84b13d8456629a67085f78.png",
+      "https://5koleso.ru/wp-content/uploads/2020/01/fim_8095-1024x683.jpg",
   },
   {
     url: "https://avirra.ru/catalog/product/escalade/?offer=5166",
     description: "cadillac escalade Sport Platinum",
     image:
-      "https://avirra.ru/upload/iblock/8d1/8d147fae672c243ac1e03c3ef51e8f3b.png",
+      "https://motor.ru/thumb/1500x0/filters:quality(75):no_upscale()/imgs/2021/09/10/07/4882813/ef2d145a355b3a45d46f26322f244f993bf43cb2.jpg",
   },
   {
     url: "https://avirra.ru/catalog/product/x5/?offer=4878",
     description: "bmw x5 xDrive40i",
     image:
-      "https://avirra.ru/upload/iblock/18f/18f53cd4a6e118584f87b7184262ce69.png",
+      "https://cdn.bmwblog.com/wp-content/uploads/2019/01/2019-BMW-X5-xDrive40i-20-of-46.jpg",
   },
   {
     url: "https://avirra.ru/catalog/product/land_cruiser_300/?offer=5125",
     description: "toyota land cruiser 300 3.5 AT Премиум",
-    image:
-      "https://avirra.ru/upload/iblock/bd4/bd4550db28d9fbcff35527c9947b97e5.png",
+    image: "https://iat.ru/uploads/origin/models/658525/3.webp",
   },
 ];
 
