@@ -57,7 +57,7 @@ img {
   background: rgba(255, 255, 255, 0.9);
   border-radius: 3px;
   transform: translateX(-100%);
-  animation: thumb 5s forwards linear;
+  animation: thumb 15s forwards linear;
 }
 
 .share_btn_wrapper {
