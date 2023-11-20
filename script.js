@@ -90,11 +90,20 @@ class SlideStories {
 
   updateShareButtons() {
     if (!this.share) return;
-    this.share.updateContent({
-      title: `${images[this.active].description}`,
-      description: `${images[this.active].description}`,
-      url: `${images[this.active].url}`,
-      image: `${images[this.active].image}`,
+
+    this.share.updateContentByService({
+      telegram: {
+        url: `${images[this.active].url}`,
+        title: `${images[this.active].description}`,
+        description: `${images[this.active].description}`,
+        image: `${images[this.active].image}`,
+      },
+      whatsapp: {
+        url: `${images[this.active].url}`,
+        title: `${images[this.active].description}`,
+        description: `${images[this.active].description}`,
+        image: `${images[this.active].image}`,
+      },
     });
   }
 
