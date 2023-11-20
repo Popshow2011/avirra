@@ -3,28 +3,25 @@ const images = [
     id: 0,
     url: "https://avirra.ru/catalog/product/gx_460/?offer=3472",
     description: "lexus gx 460 Premium Sport",
-    image:
-      "https://avirra.ru/upload/iblock/b8d/b8d4ec19ef84b13d8456629a67085f78.png",
+    image: "https://popshow2011.github.io/avirra/assets/car2.jpeg",
   },
   {
     id: 1,
     url: "https://avirra.ru/catalog/product/escalade/?offer=5166",
     description: "cadillac escalade Sport Platinum",
-    image:
-      "https://motor.ru/thumb/1500x0/filters:quality(75):no_upscale()/imgs/2021/09/10/07/4882813/ef2d145a355b3a45d46f26322f244f993bf43cb2.jpg",
+    image: "https://popshow2011.github.io/avirra/assets/car2.jpeg",
   },
   {
     id: 2,
     url: "https://avirra.ru/catalog/product/x5/?offer=4878",
     description: "bmw x5 xDrive40i",
-    image:
-      "https://cdn.bmwblog.com/wp-content/uploads/2019/01/2019-BMW-X5-xDrive40i-20-of-46.jpg",
+    image: "https://popshow2011.github.io/avirra/assets/car2.jpeg",
   },
   {
     id: 3,
     url: "https://avirra.ru/catalog/product/land_cruiser_300/?offer=5125",
     description: "toyota land cruiser 300 3.5 AT Премиум",
-    image: "https://popshow2011.github.io/avirra/assets/car.png",
+    image: "https://popshow2011.github.io/avirra/assets/car2.jpeg",
   },
 ];
 
@@ -42,8 +39,6 @@ class SlideStories {
       images[index].description;
     document.getElementById("ogUrl").content = images[index].url;
     document.getElementById("ogImage").content = images[index].image;
-
-    window.history.replaceState("", "", `/?v=${images[index].id}`);
 
     this.active = index;
     this.items.forEach((item) => item.classList.remove("active"));
