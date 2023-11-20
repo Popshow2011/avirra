@@ -3,13 +3,15 @@ const images = [
     id: 0,
     url: "https://avirra.ru/catalog/product/gx_460/?offer=3472",
     description: "lexus gx 460 Premium Sport",
-    image: "https://popshow2011.github.io/avirra/assets/car2.jpeg",
+    image:
+      "https://avirra.ru/upload/iblock/b8d/b8d4ec19ef84b13d8456629a67085f78.png",
   },
   {
     id: 1,
     url: "https://avirra.ru/catalog/product/escalade/?offer=5166",
     description: "cadillac escalade Sport Platinum",
-    image: "https://popshow2011.github.io/avirra/assets/car2.jpeg",
+    image:
+      "https://motor.ru/thumb/1500x0/filters:quality(75):no_upscale()/imgs/2021/09/10/07/4882813/ef2d145a355b3a45d46f26322f244f993bf43cb2.jpg",
   },
   {
     id: 2,
