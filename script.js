@@ -20,7 +20,7 @@ const images = [
   {
     url: "https://avirra.ru/catalog/product/land_cruiser_300/?offer=5125",
     description: "toyota land cruiser 300 3.5 AT Премиум",
-    image: "./assets/car.jpg",
+    image: "./assets/car.png",
   },
 ];
 
