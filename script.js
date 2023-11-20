@@ -93,13 +93,13 @@ class SlideStories {
 
     this.share.updateContentByService({
       telegram: {
-        url: `${images[this.active].url}`,
+        // url: `${images[this.active].url}`,
         title: `${images[this.active].description}`,
         description: `${images[this.active].description}`,
         image: `${images[this.active].image}`,
       },
       whatsapp: {
-        url: `${images[this.active].url}`,
+        // url: `${images[this.active].url}`,
         title: `${images[this.active].description}`,
         description: `${images[this.active].description}`,
         image: `${images[this.active].image}`,
@@ -112,7 +112,7 @@ class SlideStories {
 
     this.share = Ya.share2(shareWrapper, {
       content: {
-        url: `${images[this.active].url}`,
+        // url: `${images[this.active].url}`,
         title: `${images[this.active].description}`,
         description: `${images[this.active].description}`,
         image: `${images[this.active].image}`,
@@ -126,7 +126,7 @@ class SlideStories {
       },
       contentByService: {
         telegram: {
-          url: `${images[this.active].url}`,
+          // url: `${images[this.active].url}`,
           title: `${images[this.active].description}`,
           description: `${images[this.active].description}`,
           image: `${images[this.active].image}`,
