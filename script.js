@@ -49,14 +49,16 @@ class SlideStories {
     this.thumbItems[index].classList.add("active");
 
     meta.forEach((item) => item.remove());
+    this.title = "";
+    this.description = "";
+    this.url = "";
+    this.imageUrl = "";
 
-    document.head.innerHTML += `
-          <meta class="meta" name="description" content="${images[index].description}" />
-          <meta class="meta" property="og:title" content="${images[index].description}" />
-          <meta class="meta" property="og:url" content="${images[index].url}" />
-          <meta class="meta" property="og:description" content="${images[index].description}" />
-          <meta class="meta" property="og:image" content="${images[index].image}" />
-          `;
+    document.getElementById("ogTitle").content = images[index].description;
+    document.getElementById("ogDescription").content =
+      images[index].description;
+    document.getElementById("ogUrl").content = images[index].url;
+    document.getElementById("ogImage").content = images[index].image;
     this.autoSlide();
   }
 
