@@ -3,7 +3,7 @@ const images = [
     url: "https://avirra.ru/catalog/product/gx_460/?offer=3472",
     description: "lexus gx 460 Premium Sport",
     image:
-      "https://5koleso.ru/wp-content/uploads/2020/01/fim_8095-1024x683.jpg",
+      "https://avirra.ru/upload/iblock/b8d/b8d4ec19ef84b13d8456629a67085f78.png",
   },
   {
     url: "https://avirra.ru/catalog/product/escalade/?offer=5166",
@@ -103,7 +103,7 @@ class SlideStories {
         image: `${images[this.active].image}`,
       },
       theme: {
-        services: "telegram,whatsapp",
+        services: "telegram,whatsapp,vkontakte",
         lang: "ru",
         limit: 3,
         size: "l",
