@@ -33,18 +33,18 @@ class SlideStories {
   }
 
   activeSlide(index) {
-    // document.getElementById("ogTitle").content = images[index].description;
-    // document.getElementById("ogDescription").content =
-    //   images[index].description;
-    // document.getElementById("ogUrl").content = images[index].url;
-    // document.getElementById("ogImage").content = images[index].image;
+    document.getElementById("ogTitle").content = images[index].description;
+    document.getElementById("ogDescription").content =
+      images[index].description;
+    document.getElementById("ogUrl").content = images[index].url;
+    document.getElementById("ogImage").content = images[index].image;
 
     this.active = index;
     this.items.forEach((item) => item.classList.remove("active"));
     this.items[index].classList.add("active");
     this.thumbItems.forEach((item) => item.classList.remove("active"));
     this.thumbItems[index].classList.add("active");
-    // this.updateShareButtons();
+    this.updateShareButtons();
 
     this.autoSlide();
   }
@@ -96,12 +96,12 @@ class SlideStories {
     const shareWrapper = document.querySelector(".share_btn_wrapper");
 
     this.share = Ya.share2(shareWrapper, {
-      // content: {
-      //   url: `${images[this.active].url}`,
-      //   title: `${images[this.active].description}`,
-      //   description: `${images[this.active].description}`,
-      //   image: `${images[this.active].image}`,
-      // },
+      content: {
+        url: `${images[this.active].url}`,
+        title: `${images[this.active].description}`,
+        description: `${images[this.active].description}`,
+        image: `${images[this.active].image}`,
+      },
       theme: {
         services: "telegram,whatsapp,vkontakte",
         lang: "ru",
