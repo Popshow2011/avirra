@@ -40,7 +40,7 @@ class SlideStories {
     document.getElementById("ogTitle").content = images[index].description;
     document.getElementById("ogDescription").content =
       images[index].description;
-    document.getElementById("ogUrl").content = images[index].url;
+    // document.getElementById("ogUrl").content = images[index].url;
     document.getElementById("ogImage").content = images[index].image;
 
     window.history.replaceState("", "", `/${images[index].id}`);
