@@ -40,10 +40,10 @@ class SlideStories {
     document.getElementById("ogTitle").content = images[index].description;
     document.getElementById("ogDescription").content =
       images[index].description;
-    // document.getElementById("ogUrl").content = images[index].url;
+    document.getElementById("ogUrl").content = images[index].url;
     document.getElementById("ogImage").content = images[index].image;
 
-    window.history.replaceState("", "", `/${images[index].id}`);
+    window.history.replaceState("", "", `/?v=${images[index].id}`);
 
     this.active = index;
     this.items.forEach((item) => item.classList.remove("active"));
@@ -93,13 +93,13 @@ class SlideStories {
 
     this.share.updateContentByService({
       telegram: {
-        // url: `${images[this.active].url}`,
+        url: `${images[this.active].url}`,
         title: `${images[this.active].description}`,
         description: `${images[this.active].description}`,
         image: `${images[this.active].image}`,
       },
       whatsapp: {
-        // url: `${images[this.active].url}`,
+        url: `${images[this.active].url}`,
         title: `${images[this.active].description}`,
         description: `${images[this.active].description}`,
         image: `${images[this.active].image}`,
@@ -112,7 +112,7 @@ class SlideStories {
 
     this.share = Ya.share2(shareWrapper, {
       content: {
-        // url: `${images[this.active].url}`,
+        url: `${images[this.active].url}`,
         title: `${images[this.active].description}`,
         description: `${images[this.active].description}`,
         image: `${images[this.active].image}`,
@@ -126,7 +126,7 @@ class SlideStories {
       },
       contentByService: {
         telegram: {
-          // url: `${images[this.active].url}`,
+          url: `${images[this.active].url}`,
           title: `${images[this.active].description}`,
           description: `${images[this.active].description}`,
           image: `${images[this.active].image}`,
