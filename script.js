@@ -15,13 +15,14 @@ const images = [
     id: 2,
     url: "https://avirra.ru/catalog/product/x5/?offer=4878",
     description: "bmw x5 xDrive40i",
-    image: "https://popshow2011.github.io/avirra/assets/car2.jpeg",
+    image:
+      "https://cdn.bmwblog.com/wp-content/uploads/2019/01/2019-BMW-X5-xDrive40i-20-of-46.jpg",
   },
   {
     id: 3,
     url: "https://avirra.ru/catalog/product/land_cruiser_300/?offer=5125",
     description: "toyota land cruiser 300 3.5 AT Премиум",
-    image: "https://popshow2011.github.io/avirra/assets/car2.jpeg",
+    image: "https://popshow2011.github.io/avirra/assets/car.png",
   },
 ];
 
