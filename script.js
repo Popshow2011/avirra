@@ -20,7 +20,7 @@ const images = [
   {
     url: "https://avirra.ru/catalog/product/land_cruiser_300/?offer=5125",
     description: "toyota land cruiser 300 3.5 AT Премиум",
-    image: "https://iat.ru/uploads/origin/models/658525/3.webp",
+    image: "./assets/car.jpg",
   },
 ];
 
@@ -33,32 +33,19 @@ class SlideStories {
   }
 
   activeSlide(index) {
+    document.getElementById("ogTitle").content = images[index].description;
+    document.getElementById("ogDescription").content =
+      images[index].description;
+    document.getElementById("ogUrl").content = images[index].url;
+    document.getElementById("ogImage").content = images[index].image;
+
     this.active = index;
     this.items.forEach((item) => item.classList.remove("active"));
     this.items[index].classList.add("active");
     this.thumbItems.forEach((item) => item.classList.remove("active"));
     this.thumbItems[index].classList.add("active");
     this.updateShareButtons();
-    const meta = document.querySelectorAll(".meta");
 
-    meta.forEach((item) => item.remove());
-    this.active = index;
-    this.items.forEach((item) => item.classList.remove("active"));
-    this.items[index].classList.add("active");
-    this.thumbItems.forEach((item) => item.classList.remove("active"));
-    this.thumbItems[index].classList.add("active");
-
-    meta.forEach((item) => item.remove());
-    this.title = "";
-    this.description = "";
-    this.url = "";
-    this.imageUrl = "";
-
-    document.getElementById("ogTitle").content = images[index].description;
-    document.getElementById("ogDescription").content =
-      images[index].description;
-    document.getElementById("ogUrl").content = images[index].url;
-    document.getElementById("ogImage").content = images[index].image;
     this.autoSlide();
   }
 
