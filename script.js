@@ -3,13 +3,13 @@ const images = [
     id: 0,
     url: "https://avirra.ru/catalog/product/gx_460/?offer=3472",
     description: "lexus gx 460 Premium Sport",
-    image: "https://www.popshow2011.github.io/avirra/assets/car2.jpeg",
+    image: "https://popshow2011.github.io/avirra/assets/car2.jpeg",
   },
   {
     id: 1,
     url: "https://avirra.ru/catalog/product/escalade/?offer=5166",
     description: "cadillac escalade Sport Platinum",
-    image: "https://www.popshow2011.github.io/avirra/assets/car2.jpeg",
+    image: "https://popshow2011.github.io/avirra/assets/car2.jpeg",
   },
   {
     id: 2,
