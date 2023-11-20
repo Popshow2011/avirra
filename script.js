@@ -115,6 +115,20 @@ class SlideStories {
         size: "l",
         bare: false,
       },
+      contentByService: {
+        telegram: {
+          url: `${images[this.active].url}`,
+          title: `${images[this.active].description}`,
+          description: `${images[this.active].description}`,
+          image: `${images[this.active].image}`,
+        },
+        whatsapp: {
+          url: `${images[this.active].url}`,
+          title: `${images[this.active].description}`,
+          description: `${images[this.active].description}`,
+          image: `${images[this.active].image}`,
+        },
+      },
     });
   }
 
