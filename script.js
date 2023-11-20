@@ -3,25 +3,25 @@ const images = [
     id: 0,
     url: "https://avirra.ru/catalog/product/gx_460/?offer=3472",
     description: "lexus gx 460 Premium Sport",
-    image: "https://popshow2011.github.io/avirra/assets/car2.jpeg",
+    image: "https://www.popshow2011.github.io/avirra/assets/car2.jpeg",
   },
   {
     id: 1,
     url: "https://avirra.ru/catalog/product/escalade/?offer=5166",
     description: "cadillac escalade Sport Platinum",
-    image: "https://popshow2011.github.io/avirra/assets/car2.jpeg",
+    image: "https://www.popshow2011.github.io/avirra/assets/car2.jpeg",
   },
   {
     id: 2,
     url: "https://avirra.ru/catalog/product/x5/?offer=4878",
     description: "bmw x5 xDrive40i",
-    image: "https://popshow2011.github.io/avirra/assets/car2.jpeg",
+    image: "https://www.popshow2011.github.io/avirra/assets/car2.jpeg",
   },
   {
     id: 3,
     url: "https://avirra.ru/catalog/product/land_cruiser_300/?offer=5125",
     description: "toyota land cruiser 300 3.5 AT Премиум",
-    image: "https://popshow2011.github.io/avirra/assets/car2.jpeg",
+    image: "https://www.popshow2011.github.io/avirra/assets/car2.jpeg",
   },
 ];
 
